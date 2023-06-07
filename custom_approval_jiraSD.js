@@ -68,7 +68,7 @@ content.onclick = function() {
 function send_comment(commentbody) {
 	var issuekey = $(".js-breadcrumb-no-history").text();
 	let xhrcmt = new XMLHttpRequest();
-	xhrcmt.open("POST", `https://jira.tekton.online/rest/api/2/issue/${issuekey}/comment`);
+	xhrcmt.open("POST", `https://jira-sd.example.com/rest/api/2/issue/${issuekey}/comment`);
 	xhrcmt.setRequestHeader("Content-type", "application/json");
 	xhrcmt.send(commentbody);
 }
