@@ -40,7 +40,7 @@ setTimeout(function() {
 	$(document).find('.js-approve-approval').hide();
 	$(document).find('.js-decline-approval').hide();
 	$(document).find("#portal-approval-action-web-panel-root").show();
-	$(document).find(".cv-web-panel").append("<button id='cBtnA' class='aui-button aui-button-primary'>Р—Р°РІРµСЂРёС‚СЊ</button><button id='cBtnD' class='aui-button'>РћС‚РєР»РѕРЅРёС‚СЊ</button>");
+	$(document).find(".cv-web-panel").append("<button id='cBtnA' class='aui-button aui-button-primary'>Approve</button><button id='cBtnD' class='aui-button'>Decline</button>");
 }, delayWinLoad);
 
 
@@ -59,7 +59,7 @@ content.onclick = function() {
 	$(document).find('.js-decline-approval').hide();
 	if ($('#cBtnA').text() == "" || $('#cBtnD').text() == "") {
 		$(document).find("#portal-approval-action-web-panel-root").show();
-		$(document).find(".cv-web-panel").append("<button id='cBtnA' class='aui-button aui-button-primary'>Р—Р°РІРµСЂРёС‚СЊ</button><button id='cBtnD' class='aui-button'>РћС‚РєР»РѕРЅРёС‚СЊ</button>");
+		$(document).find(".cv-web-panel").append("<button id='cBtnA' class='aui-button aui-button-primary'>Approve</button><button id='cBtnD' class='aui-button'>Decline</button>");
 	}
     }, delayContentLoad);
 }
@@ -95,7 +95,7 @@ let div = document.createElement('div');
   div.style.border = "2px solid Silver";
   div.style.borderRadius = "5px";
   div.style.zIndex = "999999999999999999";
-  div.innerHTML = "<div class='modal-content'><p><big><b>РљРѕРјРјРµРЅС‚Р°СЂРёР№</b></big><Br><textarea placeholder = 'РћСЃС‚Р°РІСЊС‚Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅС‹Р№ РєРѕРјРјРµРЅС‚Р°СЂРёР№' class='textarea full-width-field' name='comment' id='commentinput' cols='40' rows='7' required></textarea></p><br><button id='cfApprove' class='aui-button aui-button-primary'>Р—Р°РІРµСЂРёС‚СЊ</button><button id='cfDecline' class='aui-button'>РћС‚РєР»РѕРЅРёС‚СЊ</button></div>";
+  div.innerHTML = "<div class='modal-content'><p><big><b>Comment</b></big><Br><textarea placeholder = 'Leave a required comment' class='textarea full-width-field' name='comment' id='commentinput' cols='40' rows='7' required></textarea></p><br><button id='cfApprove' class='aui-button aui-button-primary'>Approve</button><button id='cfDecline' class='aui-button'>Decline</button></div>";
 
   document.body.append(div);
 
