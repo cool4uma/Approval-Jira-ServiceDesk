@@ -1,4 +1,5 @@
 /*! Custom mandatory comment when approve/decline request for Jira Service Desk | (c) Malik cool4uma 2023 */
+/*! Project link: https://github.com/cool4uma/Approval-Jira-ServiceDesk */
 
 	$(document).delegate("#cBtnA", "click", function(){
 	modalWin.style.display = 'block';
